@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema de Depósito de Materiais</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Cadastro de Materiais de Construção</h1>
+
+  <form id="form-material">
+    <input type="text" id="nome" placeholder="Nome do material" required>
+    <input type="number" id="quantidade" placeholder="Quantidade" required>
+    <input type="text" id="categoria" placeholder="Categoria" required>
+    <button type="submit">Adicionar</button>
+  </form>
+
+  <h2>Materiais Cadastrados</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Quantidade</th>
+        <th>Categoria</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody id="tabela-materiais">
+      <!-- Materiais serão inseridos aqui -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
